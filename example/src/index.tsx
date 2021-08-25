@@ -1,19 +1,18 @@
-import * as Surplus from 'surplus';
+import * as Surplus from "surplus"; Surplus;
 import S from 's-js';
-let a: Array<number> = [1, 2, 3];
 
 S.root(() => {
-  const name = S.data(`world ${Date.now()}`);
-  const view = (
-    <div>
-      <h1>Hello {name()}!</h1>
-    </div>
-  );
-  const root = document.getElementById('ts-root');
-  root.innerHTML = '';
-  root.appendChild(view);
+	const name = S.data<string>(`world ${Date.now()}`);
+	const view = (
+		<div>
+			<h1>Hello {name()}!</h1>
+		</div>
+	);
+	const root = document.getElementById('ts-root');
+	root.innerHTML = '';
+	root.appendChild(view);
 
-  setInterval(() => {
-    name(`world ${Date.now()}`);
-  }, 10);
+	setInterval(() => {
+		name(`world ${Date.now()}`);
+	}, 10);
 });

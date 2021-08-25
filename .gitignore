@@ -61,6 +61,5 @@ typings/
 .next
 
 # parcel build output and cache
-dist
-.cache
-package-lock.json
+/example/dist
+.parcel-cache

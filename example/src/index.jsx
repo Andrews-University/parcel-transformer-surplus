@@ -1,4 +1,4 @@
-import * as Surplus from 'surplus'
+import * as Surplus from 'surplus'; Surplus;
 import S from 's-js'
 
 S.root(() => {

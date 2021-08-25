@@ -1,56 +1,22 @@
 {
-  "name": "parcel-plugin-surplus",
-  "version": "1.3.0",
-  "description": "",
-  "main": "index.js",
-  "files": [
-    "index.js",
-    "lib"
-  ],
-  "scripts": {
-    "test": "jest",
-    "posttest": "npm run lint",
-    "lint": "standard lib/**/*.js __tests__/index.js",
-    "version": "chan release ${npm_package_version} && git add .",
-    "prepublish": "npm test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/tinchoz49/parcel-plugin-surplus.git"
-  },
-  "keywords": [
-    "parcel",
-    "parcel-plugin",
-    "surplus",
-    "jsx"
-  ],
-  "author": {
-    "name": "Martín Acosta"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/tinchoz49/parcel-plugin-surplus/issues"
-  },
-  "homepage": "https://github.com/tinchoz49/parcel-plugin-surplus#readme",
-  "jest": {
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/__tests__/samples/"
-    ]
-  },
-  "peerDependencies": {
-    "parcel-bundler": "^1.9.6",
-    "surplus": "^0.5.2"
-  },
-  "devDependencies": {
-    "@geut/chan": "^2.0.0",
-    "jest": "^24.8.0",
-    "parcel-bundler": "^1.12.3",
-    "s-js": "^0.4.7",
-    "standard": "^12.0.1",
-    "surplus": "^0.5.2"
-  },
-  "dependencies": {
-    "deps-regex": "^0.1.4"
-  }
+	"name": "parcel-transformer-surplus",
+	"version": "2.0.0",
+	"license": "MIT",
+	"main": "index.js",
+	"engines": {
+		"node": ">= 12.0.0",
+		"parcel": "^2.0.0-beta.3.1"
+	},
+	"dependencies": {
+		"@parcel/plugin": "^2.0.0-beta.3.1",
+		"deps-regex": "^0.1.4"
+	},
+	"devDependencies": {
+		"@parcel/source-map": "2.0.0-rc.1.0",
+		"@parcel/utils": "^2.0.0-beta.3.1",
+		"surplus": "^0.5.3"
+	},
+	"peerDependencies": {
+		"surplus": "^0.5.3"
+	}
 }
